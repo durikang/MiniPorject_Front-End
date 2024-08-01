@@ -6,7 +6,7 @@
     <!-- 반응형 메타 태그 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전체 폼 통합</title>
-    <link rel="stylesheet" href="../../resources/css/java/java.css" type="text/css">
+    <link rel="stylesheet" href="../../resources/css/server/jdbc.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
@@ -51,12 +51,12 @@
 
         <nav id="navigator">
             <ul id="navi">
-                <li><a href="java.html">Java</a>
+                <li><a href="../java/java.html">Java</a>
                     <ul>
-                        <li><a href="oop.html">객체지향</a></li>
-                        <li><a href="abstraction.html">추상화와 캡슐화</a></li>
-                        <li><a href="inheritance.html">상속</a></li>
-                        <li><a href="polymorphism.html">다형성</a></li>
+                        <li><a href="../java/oop.html">객체지향</a></li>
+                        <li><a href="../java/abstraction.html">추상화와 캡슐화</a></li>
+                        <li><a href="../java/inheritance.html">상속</a></li>
+                        <li><a href="../java/polymorphism.html">다형성</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Oracle</a></li>
@@ -70,7 +70,7 @@
                 </li>
                 <li><a href="#">Server</a>
                     <ul>
-                        <li><a href="#">JDBC</a></li>
+                        <li><a href="jdbc.html">JDBC</a></li>
                         <li><a href="#">Servlet</a></li>
                         <li><a href="#">JSP</a></li>
                         <li><a href="#">AJAX</a></li>
@@ -89,27 +89,34 @@
             <aside id="content-1"></aside>
             <section id="content-2">
                 <div class="content">
-                    <h1>자바란?(Java)</h1>
+                    <h1>JDBC란(Java Database Connectivity)?</h1>
                     <hr>
                 </div>
                 <div>
+
+                    <p>Java 기반 애플리케이션의 데이터를 데이터베이스에 저장 및 업데이트하거나, 데이터베이스에 저장된 데이터를 Java에서 사용할 수 있도록 하는 자바 API이다.<br>
+                        JDBC는 Java 애플리케이션에서 데이터베이스에 접근하기 위해 JDBC API를 사용하여 데이터베이스에 연동할 수 있으며, <br>
+                        데이터베이스에서 자료를 쿼리(Query)하거나 업데이트하는 방법을 제공한다.</p>
+
+
+
                     <div class="content">
-                        <img class="java_img" src="../../resources/img/java/java.png" alt="java_img">
-                        <img class="java_exe" src="../../resources/img/java/java_exe.png" alt="java_exe">
-                    </div>
-                    <li>Java는 객체 지향 프로그래밍 언어 및 소프트웨어 플랫폼이다.</li>
-                    또한 바이트 코드(중간 언어)인 추상적인 코드로 구현된다. <br>
-                    따라서, 자바 프로그램을 실행하기 위해서는 자바 가상 머신(JVM)과 개발에 필요한 표준 라이브러리 세트와 컴파일러의 환경만 맞추면<br>
-                    자바 프로그램은 모든 환경에서 동일하게 동작한다. 이러한 실행환경과 개발환경을 제공하는 것이 자바 플랫폼이다.</p>
-                    <div class="content">
-                        <h1>Java의 장점은?</h1>
+                        <h1>JDBC의 표준?</h1>
                     </div>
                     <hr>
-                    <li>
-                        객체지향프로그래밍이다.
-                        <ol>유지보수가 쉽고 직관적인 코드 분석이 가능하다.</ol>
-                        <ol>설계도인 클래스를 작성하여, 객체와 객체를 연결하여 목적에 맞는 프로그램을 완성한다.</ol>
-                    </li>
+                    <div class="content">
+                        <img class="java_img" src="../../resources/img/server/jdbc.png" alt="java_img">
+
+                    </div>
+
+                    <p>
+                        JDBC는 3가지 기능을 표준 인터페이스로 정의하여 제공한다.
+                        <li>java.sql.Connection - 연결</li>
+                        <li>java.sql.Statement - SQL을 담은 내용</li>
+                        <li>java.sql.ResultSet - SQL 요청 응답</li>
+                        <ol>Spring Data JDBC, Spring Data JPA 등과 같은 기술이 등장하면서 JDBC API를 직접적으로 사용하는 일은 줄어들었다.<br>
+                            하지만, Spring Data JDBC, Sprind Data JPA와 같은 기술도 데이터베이스와 연동하기 위해 <br>내부적으로 JDBC를 이용하기 때문에 JDBC의 동작 흐름에 대해 알 필요가 있다.</ol>
+                    </p>
                     <li>
                         이식성이 높다.
                         <ol>자바가상머신(JVM)에서 작동하기 때문에 운영체제의 종류에 상관없이 작동한다.</ol>

@@ -290,6 +290,10 @@ section#content-2 {
     width: 400px;
     height: 200px;
 }
+.content{
+    text-align: center;
+    font-family: "굴림";
+    }
 
 
 /* 미디어 쿼리 */
