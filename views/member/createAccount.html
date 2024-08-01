@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전체 폼 통합</title>
     <link rel="stylesheet" href="../../resources/css/main.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https:/fonts.googleapis.com">
+    <link rel="preconnect" href="https:/fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../resources/css/member/createaccount.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 </head>
@@ -32,8 +32,13 @@
 
             <section class="header" id="header3">
                 <div id="login">
+<<<<<<< HEAD
                     <a href="login.html">로그인</a>
                     <a href="CreateAccount.html">회원가입</a>
+=======
+                    <a href="../member/login.html">로그인</a>
+                    <a href="../member/createaccount.html">회원가입</a>
+>>>>>>> 69ff92816ad5af40dbe1dc68ac99141f556ecd4d
                 </div>
             </section>
         </header>
@@ -56,8 +61,7 @@
                         <li><a href="../java/inheritance.html">상속</a></li>
                         <li><a href="../java/polymorphism.html">다형성</a></li>
                     </ul>
-                </li>     
-                <li><a href="#">Oracle</a></li>
+                <li><a href="../oracle/oracle.html">Oracle</a></li>
                 <li><a href="#">Front-End</a>
                     <ul>
                         <li><a href="#">HTML5</a></li>
@@ -89,19 +93,23 @@
                 <td><h2>회원가입</h2></td>
             </tr>
             <tr><td>아이디</td></tr>
-            <tr><td><input type="text" class="text"></td></tr>
+            <tr><td><input class="text" type="text" maxlength="16" placeholder="16자까지만 입력하세요"></td></tr>
             <tr><td>비밀번호</td></tr>
-            <tr><td><input type="password" class="text"></td></tr>
+            <tr><td><input  type="password" class="text" maxlength="16" placeholder="16자까지만 입력하세요"></td></tr>
             <tr><td>비밀번호 확인</td></tr>
-            <tr><td><input type="password" class="text"></td></tr>
+            <tr><td><input  type="password" class="text" maxlength="16" placeholder="16자까지만 입력하세요"></td></tr>
             <tr><td>이름</td></tr>
-            <tr><td><input type="text" class="text"></td></tr>
+            <tr><td><input  type="text" class="text"></td></tr>
             <tr><td>생년월일</td></tr>
-            <tr><td><input type="date" class="text"></td></tr>
+            <tr><td><input  type="date" class="text"></td></tr>
+            <tr><td>주소</td></tr>
+            <tr><td><input type="text" class="text"></td></tr>
+            <tr><td>연락처</td></tr>
+            <tr><td><input class="phone" type="tell"  maxlength="11" placeholder="-을 빼고 입력하세요" ><button class="certify" onclick="alert('인증 성공!')">인증</button></td></tr>
             <tr><td>이메일</td></tr>
             <tr>
-                <td><input type="text" class="email"> @ 
-                    <select>
+                <td><input  type="text" class="email"> @ 
+                    <select class="email1">
                         <option>naver.com</option>
                         <option>gmail.com</option>
                         <option>daum.net</option>
@@ -111,6 +119,7 @@
             </tr>
             <tr><td><input type="submit" value="가입하기" class="btn" onclick="alert('가입 성공!')"></td></tr>
             </table>
+        </form>
 
 
         <section id="content">

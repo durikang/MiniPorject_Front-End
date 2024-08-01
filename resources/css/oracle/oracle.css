@@ -1,0 +1,27 @@
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 40px;
+}
+p {
+    margin: 3px 0;
+}
+strong {
+    color: #000000;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+.img {
+    max-width: 70%;
+    height: auto;
+    margin: 20px 0;
+}
+#content {
+    flex-wrap: wrap;
+}
+
+

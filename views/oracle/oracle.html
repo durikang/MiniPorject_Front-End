@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 메타 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체 폼 통합</title>
+    <link rel="stylesheet" href="../../resources/css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../resources/css/oracle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <section class="header" id="header1">
+                <a href="../../index.html">
+                    <img src="../../resources/img/main/global_logo.jpg" id="home-logo" alt="Home Logo">
+                </a>
+            </section>
+
+            <section class="header" id="header2">
+                <form id="search-form">
+                    <input type="text" id="search-input" class="custom-form-control" name="search-input"
+                        placeholder="검색...">
+                    <div id="search-btn-area">
+                        <!-- <button type="submit" id="search-btn">검색</button> -->
+                    </div>
+                </form>
+            </section>
+
+            <section class="header" id="header3">
+                <div id="login">
+                    <a href="../member/login.html" >로그인</a>
+                    <a href="../member/createaccount.html" onclick="">회원가입</a>
+                </div>
+            </section>
+        </header>
+        <!-- masthead -->
+        <header id="masthead">
+            <section class="header" id="header-img-area">
+                <a href="../../index.html">
+                    <img src="../../resources/img/main/bg.gif" id="home-bg" alt="Home home-bg">
+                </a>
+            </section>
+        </header>
+        <!-- masthead end -->
+
+        <nav id="navigator">
+            <ul id="navi">
+            </head>  <li><a href="../java/java.html">Java</a>
+                <ul>
+                    <li><a href="../java/oop.html">객체지향</a></li>
+                    <li><a href="../java/abstraction.html">추상화와 캡슐화</a></li>
+                    <li><a href="../java/inheritance.html">상속</a></li>
+                    <li><a href="../java/polymorphism.html">다형성</a></li>
+                </ul>
+                <li><a href="views/oracle/oracle.html">Oracle</a></li>
+                <li><a href="#">Front-End</a>
+                    <ul>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">JQuery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Server</a>
+                    <ul>
+                        <li><a href="#">JDBC</a></li>
+                        <li><a href="#">Servlet</a></li>
+                        <li><a href="#">JSP</a></li>
+                        <li><a href="#">AJAX</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Framework</a>
+                    <ul>
+                        <li><a href="#">Spring</a></li>
+                        <li><a href="#">MyBatis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="content">
+            <aside id="content-1"></aside>
+            <section id="content-2">
+                <h1>Oracle의 Datatype</h1>
+                <hr>
+                <strong>문자형:</strong>
+                <p> 1-1. <strong>고정형: char(10)</strong>: 10byte이하의 데이터를 입력하고, 크기는 무조건 10byte 취급. 단!</p>
+                <p>유일하게 oracle xe버전에서는 한글을 글자당 3byte 취급한다. (본래 2byte)* 최대 2천 byte까지</p>
+                <p>1-2: <strong>가변형: varchar2(10)</strong>: 10byte이하, 취급 크기는 실제 입력된 데이터 크기와 동일.</p>
+                <p>최대 4천 byte까지. long의 경우 최대 2gb, clob의 경우 최대 4gb까지.</p><br>
+                <strong>숫자형:</strong>
+                <p><strong>number</strong>(표현 가능한 전체 자릿수(p), 소숫점 이하 자릿수(s)) p: precision, scale</p>
+                <p> 단, s를 음수로 처리하는 경우 소숫점 n자릿수 이상으로 반올림처리. 즉,</p>
+                <p>s를 입력하지 않고 number(p)로 선언하는 경우 소숫점을 허용하지 않는다.</p> <br>
+                <strong>날짜형:</strong>
+                <p>년/월/일 시/분/초. 1 단위의 산술 연산이 가능. ex. 날짜 +- 숫자 = 날짜. 날짜 - 날짜 = 숫자.</p>
+                <p>TimeStamp: 년/월/일/시/분/초/millisecond</p>
+                <p>sysdate: 현재 시각 정보를 가져오는 키워드</p><br>
+                <img src="../../resources/img/oracle/1.gif" alt="123" class="img">
+                <br>
+                <br>
+                <br>
+                <h1>SQL의 처리 순서: FWGHSO</h1>
+                <hr>
+                <br>
+                <p>1.<strong>from</strong>: 대상 테이블. 어디서 부터 조회할 것인지</p>
+                <p>2.<strong>where</strong>: 조건절(condition). result set에 포함시킬 row를 필터링</p>
+                <p>3.<strong>group by</strong>: groupping rows</p>
+                <p>4.<strong>having</strong>: filtering group of rows</p>
+                <p>5.<strong>select</strong>: 조회할 컬럼 지정</p>
+                <p>6.<strong>order by</strong>: 행 사이의 정렬 지정</p>
+                <img src="../../resources/img/oracle/2.png" alt="123" class="img">
+                <br>
+                <br>
+                <br>
+                <h1>기초 코드(1): 데이터 입력/데이터 타입 테스트</h1>
+                <hr>
+                <br>
+                 create table TableName( --TableName명의 table 생성<br>
+                (ColumnName1) dataType(byte:size), --열의 이름,데이터 타입(사이즈) 선언<br>
+                (ColumnName2) dataType(byte:size),<br>
+                (ColumnName3) dataType(byte:size) <br>
+                ); <br>
+                <br>
+                <br>
+                select sysdate, 'ColName1', 'ColName2' from dual;<br>
+                --ColumnName 설정 및 dual(단행-임시테이블)에 선언<br>
+                select sysdate, tochar(sysdate, 'dateFormat') as "(alias)" from dual;<br>
+                --as alias로 별칭 설정<br>
+                insert into TableName values (val1, val2, val3);<br>
+                --해당 TableName명의 table에 값 대입. 주: 열의 갯수에 맞게 대입해야함<br>
+                drop table TableName; --TableName명의 table Drop, 즉 삭제<br>
+                <br>
+                <br>
+                commit; --transaction을 마치고 현재까지의 진행 상황을 저장<br>
+                rollback; --직전 커밋 시점까지의 transaction을 취소, 즉 날림.
+                <br>
+                <br>
+                <img src="../../resources/img/oracle/3.png" alt="123" class="img">
+                <br>
+                <br>
+                <img src="../../resources/img/oracle/4.png" alt="" class="img">
+                <h1>기초 코드(2): 데이터 조회</h1>
+                <hr>
+                <br>
+                select * -- = select all, 모든 섹션 조회<br>
+                select * from (RowName/SectionName); --특정 섹션(행) 조회 설정<br>
+                where (Condition1) and (Condition2) or (Condition3) --조회 조건문 입력<br>
+                order by (TargetRowName/SectionName) asc(or desc); --정렬방식 설정<br>
+                <br>
+                <br>
+                <img src="../../resources/img/oracle/5.png" alt="" class="img">
+                <br>
+                <br>
+                <h1>코드 작성시 특이사항</h1>
+                <hr>
+                <br>
+                <br>
+                <ul>
+                    <li>오라클을 다운받게 되면 기본적으로 sys, system 이렇게 2개의 계정을 갖게 된다. 
+                        Oracle Database는 하나의 db 서버에 여러 개의 데이터베이스를 만들 수 있으며
+                        (단, 교육 버전인 xe는 1개의 데이터베이스만 생성 가능), 이 DB 생성 권한은 sys만
+                         가지고 있다.</li><br>
+                    <li>sql developer에서 할 수 있는 모든 동작들은 sql plus에서 전부 수행이 가능하며, 
+                        sql문은 기본적으로 대소문자 구분을 하지 않지만 
+                        (때문에 java와 다르게 camelCasing이 아니라 snake_casing을 한다.)
+                         identified by, where (조건문)의 경우에는 대소문자 구분을 한다.</li><br>
+                    <li>RunScript(F5)는 특별한 경우가 아닌 이상 절대 누르지 않기로 한다.
+                         Oracle DB는 java와 달라서 이미 실행된 코드도 재선택하고
+                          실행하면 실행하는 만큼 반복 실행 된다.</li><br>
+                    <li>default tablespace의 경우에 system, users 두 개의 구분이 있으며 일반적인 경우에는 
+                        users를 권장한다.</li><br>
+                    <li>가변 가능성이 큰 데이터의 경우 가변형 varchar보다 char를 넉넉히 잡아두는 것이 좋다.
+                        (용량 효율면에서)</li><br>
+                </ul>
+                
+            </section>
+            <section id="content-3">
+                <article id="content-3-2"></article>
+            </section>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <section id="footer1">
+            <a href="#">이용약관</a> |
+            <a href="#">개인정보처리방침</a> |
+            <a href="#">FAQ</a> |
+            <a href="#">고객센터</a> |
+            <a href="#">사이트맵</a>
+        </section>
+        <section id="footer2">
+            <p>© 2024 전체 폼 통합. All rights reserved.</p>
+            <p>이 사이트는 학습 목적으로 제작되었습니다.</p>
+        </section>
+    </footer>
+</body>
+
+</html>
