@@ -1,0 +1,14 @@
+#programing_img_1{
+    display: inline-block;
+    text-align: center;
+
+    padding: auto;
+    width: 300px; 
+    height: 298px;
+}
+#programing_img_2{
+    display: block; 
+    padding: auto; 
+    width: 500px; 
+    height: 334px;
+}
