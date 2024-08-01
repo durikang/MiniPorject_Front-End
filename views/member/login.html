@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 메타 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체 폼 통합</title>
+    <link rel="stylesheet" href="../../resources/css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../resources/css/member/login.css">
+
+<script>
+    function go(){
+        location.href="createAccount.html";
+    }
+
+
+</script>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <section class="header" id="header1">
+                <a href="../../index.html">
+                    <img src="../../resources/img/main/global_logo.jpg" id="home-logo" alt="Home Logo">
+                </a>
+            </section>
+
+            <section class="header" id="header2">
+                <form id="search-form">
+                    <input type="text" id="search-input" class="custom-form-control" name="search-input"
+                        placeholder="검색...">
+                    <div id="search-btn-area">
+                        <!-- <button type="submit" id="search-btn">검색</button> -->
+                    </div>
+                </form>
+            </section>
+
+            <section class="header" id="header3">
+                <div id="login">
+                    <a href="login.html">로그인</a>
+                    <a href="createAccount.html" onclick="">회원가입</a>
+                </div>
+            </section>
+        </header>
+        <!-- masthead -->
+        <header id="masthead">
+            <section class="header" id="header-img-area">
+                <a href="../../index.html">
+                    <img src="../../resources/img/main/bg.gif" id="home-bg" alt="Home home-bg">
+                </a>
+            </section>
+        </header>
+        <!-- masthead end -->
+
+        <nav id="navigator">
+            <ul id="navi">
+                <li><a href="../java/java.html">Java</a>
+                    <ul>
+                        <li><a href="../java/0_객체지향.html">객체지향</a></li>
+                        <li><a href="../java/0_추상화와 캡슐화.html">추상화와 캡슐화</a></li>
+                        <li><a href="../java/0_상속.html">상속</a></li>
+                        <li><a href="../java/0_다형성.html">다형성</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Oracle</a></li>
+                <li><a href="#">Front-End</a>
+                    <ul>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">JQuery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Server</a>
+                    <ul>
+                        <li><a href="#">JDBC</a></li>
+                        <li><a href="#">Servlet</a></li>
+                        <li><a href="#">JSP</a></li>
+                        <li><a href="#">AJAX</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Framework</a>
+                    <ul>
+                        <li><a href="#">Spring</a></li>
+                        <li><a href="#">MyBatis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="content">
+            <aside id="content-1"></aside>
+            <section id="content-2">
+                <!--
+                    내용 채워 넣을 것. 
+                 -->
+            </section>
+            <section id="content-3">
+                <div id="login_wrap">
+                    <h2 class="login_title">회원 로그인</h2>
+                    <form class="">
+                        <table class="login_t">
+                            <tr>
+
+                                <td>
+                                    <input id="login" class="custom-form-control" type="text" class="input_box"
+                                        placeholder="아이디" size="15">
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    <input id="login" class="custom-form-control" type="password" placeholder="비밀번호"
+                                        class="input_box" size="15">
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+                        <div id="login_menu">
+                            <div class="login_id_saver">
+                                <div id="member-save"> <input class="login_id_saver_button" type="checkbox"
+                                        value="remember">아이디 저장 </div>
+                                <div id="member-keep"> <input class="login_id_saver_stans" type="checkbox"
+                                        value="remember">로그인 유지 </div>
+                            </div>
+
+                            <div id="login_button">
+                                <input class="login_button1" type="submit" value="로그인" class="login_b"
+                                    onclick="alert('로그인 성공!')">
+
+
+                                <input onclick='location.href="./createAccount.html"' class="login_button2" type="button" value="회원가입"
+                                    class="login_b">
+
+
+                                <input class="login_button3" type="button" value="비밀번호 찾기" class="login_b"
+                                    onclick="alert('아직 미구현!')">
+                            </div>
+                        </div>
+                </div> <!-- id="login_menu" end -->
+
+                </form>
+
+    </div> <!-- id="login_wrap" end -->
+    <article id="content-3-2"></article>
+    </section>
+    </section>
+    </div>
+
+    <footer id="footer">
+        <section id="footer1">
+            <a href="#">이용약관</a> |
+            <a href="#">개인정보처리방침</a> |
+            <a href="#">FAQ</a> |
+            <a href="#">고객센터</a> |
+            <a href="#">사이트맵</a>
+        </section>
+        <section id="footer2">
+            <p>© 2024 전체 폼 통합. All rights reserved.</p>
+            <p>이 사이트는 학습 목적으로 제작되었습니다.</p>
+        </section>
+    </footer>
+</body>
+
+</html>

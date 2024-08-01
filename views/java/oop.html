@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 메타 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체 폼 통합</title>
+    <link rel="stylesheet" href="../../resources/css/java/oop.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <section class="header" id="header1">
+                <a href="../../index.html">
+                    <img src="../../resources/img/main/global_logo.jpg" id="home-logo" alt="Home Logo">
+                </a>
+            </section>
+
+            <section class="header" id="header2">
+                <form id="search-form">
+                    <input type="text" id="search-input" class="custom-form-control" name="search-input"
+                        placeholder="검색...">
+                    <div id="search-btn-area">
+                        <!-- <button type="submit" id="search-btn">검색</button> -->
+                    </div>
+                </form>
+            </section>
+
+            <section class="header" id="header3">
+                <div id="login">
+                    <a href="../member/login.html" onclick="login_window()">로그인</a>
+                    <a href="../member/createAccount.html" onclick="">회원가입</a>
+                </div>
+            </section>
+        </header>
+        <!-- masthead -->
+        <header id="masthead">
+            <section class="header" id="header-img-area">
+                <a href="../../index.html">
+                    <img src="../../resources/img/main/bg.gif" id="home-bg" alt="Home home-bg">
+                </a>
+            </section>
+        </header>
+        <!-- masthead end -->
+
+        <nav id="navigator">
+            <ul id="navi">
+                <li><a href="java.html">Java</a>
+                    <ul>
+                        <li><a href="oop.html">객체지향</a></li>
+                        <li><a href="abstraction.html">추상화와 캡슐화</a></li>
+                        <li><a href="inheritance.html">상속</a></li>
+                        <li><a href="polymorphism.html">다형성</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Oracle</a></li>
+                <li><a href="#">Front-End</a>
+                    <ul>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">JQuery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Server</a>
+                    <ul>
+                        <li><a href="#">JDBC</a></li>
+                        <li><a href="#">Servlet</a></li>
+                        <li><a href="#">JSP</a></li>
+                        <li><a href="#">AJAX</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Framework</a>
+                    <ul>
+                        <li><a href="#">Spring</a></li>
+                        <li><a href="#">MyBatis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="content">
+            <aside id="content-1"></aside>
+            <section id="content-2">
+                <div align="center" style="font-family: 굴림;">
+                    <h1>객체지향 프로그래밍이란?(Object-Oriented Programming, OOP)</h1>
+                    <hr>
+                </div>
+                <div style="font-family: 굴림;">
+                    <div align="center">
+                        <img class="java_img" src="../../resources/img/java/oop.png" alt="java_img">
+                    </div>
+                    <li> 프로그래밍에서 필요한 데이터를 추상화 시켜 상태와 행위를 가진 객체로 만들고,
+                        객체들간의 상호작용을 통해 로직을 구성하는 프로그래밍 방법이다.</li>
+                    <h1 align="center">객체란?</h1>
+                    <hr>
+                    <div align="center">
+                        <img class="java_exe" src="../../resources/img/java/array.png" alt="java_img">
+                    </div>
+                    <li>객체는 프로그램에서 사용되는 데이터 또는 식별자에 의해 참조되는 공간을 의미하며 값을 저장 할 변수와 작업을 수행 할 메소드를 서로 연관된 것들끼리 묶어서 만든 것을
+                        객체라고 할 수 있다. </li>
+                    <li>객체지향 프로그래밍을 붕어빵기계로 표현 할 수 있는데, 객체가 각기 다른 맛인 붕어빵이 될 것이고 붕어빵 트레이로 각기 다른 맛인 붕어빵을 만드는 방식이 객체지향
+                        프로그래밍이라고 할 수 있다.
+                    </li>
+                    <div align="center" style="font-family: 굴림;">
+                        <h1>객체 지향 프로그래밍의 특징?</h1>
+                        <hr>
+                    </div>
+                    <li>객체 지향 프로그래밍은 크게 추상화 , 캡슐화 , 상속 , 다형성 의 네가지 특징을 가진다.</li>
+                    <div align="center" style="font-family: 굴림;">
+                        <h1>객체 지향 프로그래밍의 장점?</h1>
+                        <hr>
+                    </div>
+                    <li>클래스 단위로 모듈화시켜서 개발하기 때문에 업무 분담이 편리하고 대규모 소프트웨어 개발에 적합하다.</li>
+                    <li>클래스 단위로 수정이 가능하기 때문에 유지 보수가 편리하다.</li>
+                    <li>클래스를 재사용하거나 상속을 통해 확장함으로써 코드 재사용이 용이하다.</li>
+                    <div align="center" style="font-family: 굴림;">
+                        <h1>객체 지향 프로그래밍의 단점?</h1>
+                        <hr>
+                    </div>
+                    <li>처리속도가 상대적으로 느리다.</li>
+                    <li>객체의 수가 많아짐에 따라 용량이 커질 수 있다.</li>
+                    <li>설계시 많은 시간과 노력이 필요하게 될 수 있다.</li>
+                </div>
+            </section>
+            <section id="content-3">
+                <article id="content-3-2"></article>
+            </section>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <section id="footer1">
+            <a href="#">이용약관</a> |
+            <a href="#">개인정보처리방침</a> |
+            <a href="#">FAQ</a> |
+            <a href="#">고객센터</a> |
+            <a href="#">사이트맵</a>
+        </section>
+        <section id="footer2">
+            <p>© 2024 전체 폼 통합. All rights reserved.</p>
+            <p>이 사이트는 학습 목적으로 제작되었습니다.</p>
+        </section>
+    </footer>
+</body>
+
+</html>
