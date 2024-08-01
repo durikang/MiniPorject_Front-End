@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+        <!-- 반응형 메타 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체 폼 통합</title>
+    <link rel="stylesheet" href="resources/css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../resources/css/front-end/html5.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <section class="header" id="header1">
+                <a href="index.html">
+                    <img src="resources/img/main/global_logo.jpg" id="home-logo" alt="Home Logo">
+                </a>
+            </section>
+
+            <section class="header" id="header2">
+                <form id="search-form">
+                    <input type="text" id="search-input" class="custom-form-control" name="search-input" placeholder="검색...">
+                    <div id="search-btn-area">
+                        <!-- <button type="submit" id="search-btn">검색</button> -->
+                    </div>
+                </form>
+            </section>
+
+            <section class="header" id="header3">
+                <div id="login">
+                    <a href="views/member/login.html">로그인</a>
+                    <a href="views/member/CreateAccount.html">회원가입</a>
+                </div>
+            </section>
+        </header>
+        <!-- masthead -->
+        <header id="masthead">
+            <section class="header" id="header-img-area">
+                <a href="index.html">
+                    <img src="resources/img/main/bg.gif" id="home-bg" alt="Home home-bg">
+                </a>
+            </section>
+        </header>
+        <!-- masthead end -->
+
+        <nav id="navigator">
+            <ul id="navi">
+                <li><a href="views/java/java.html">Java</a>
+                    <ul>
+                        <li><a href="views/java/oop.html">객체지향</a></li>
+                        <li><a href="views/java/abstraction.html">추상화와 캡슐화</a></li>
+                        <li><a href="views/java/inheritance.html">상속</a></li>
+                        <li><a href="views/java/polymorphism.html">다형성</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Oracle</a></li>
+                <li><a href="#">Front-End</a>
+                    <ul>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">JQuery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Server</a>
+                    <ul>
+                        <li><a href="#">JDBC</a></li>
+                        <li><a href="#">Servlet</a></li>
+                        <li><a href="#">JSP</a></li>
+                        <li><a href="#">AJAX</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Framework</a>
+                    <ul>
+                        <li><a href="#">Spring</a></li>
+                        <li><a href="#">MyBatis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="content">
+            <aside id="content-1"></aside>
+            <section id="content-2">
+                <div class="html_style">
+                    <p>
+                        HTML란
+                        <mark id="markarea">HyperText(웹 페이지에서 다른 페이지로 이동할 수 
+                                            있도록 하는 것)</mark>
+                         기능을 가진 문서를 만드는 언어입니다.<br> 모든 태그는 미리 정의가 되어 있어서 각각의 
+                        <br> 태그와 속성을 사용하면 됩니다.
+                    </p>
+                       <hr>
+                    <p>
+                        <html id="htmlEm">HTML 용어</html></p>
+                    <p>
+                        * 엘리먼트(element) - 요소<br>
+                          ■ open tag - 여는 태그<br>
+                          ■ close tag - 닫는 태그<br>
+                        <div style="text-align: center; width: 1000px;">
+                        <img src="../../resources/img/html_element.png"> <br></div>
+                          ■ 여는 태그와 닫는 태그가 있는 이유는 콘텐츠를 감싸기 위함입니다.<br>
+                        * 닫는 태그(close tag)가 없는 HTML요소 - 콘텐츠(contents)를 감싸지 않아 비어있다는 의미<br>
+                        <pre></pre>
+                    </p>
+                    <p> HTML은
+                        <code id="codearea">.htm</code>
+                        , 
+                        <code id="codearea">.html</code>
+                        확장자 포맷을 가지고 있습니다.
+                    </p>
+                    <hr>
+                    <p>
+                        <alter id="alterarea">ALTER</alter>
+                                             는 문서형(DTO) 정의를 생략하는 경우 웹 브라우저가 표준모드가 아니라<br> 비표준모드(Quirks mode)로
+                                             렌더링되어 크로스 브라우징에 어려움을 겪을 수 있습니다.
+                    </p>
+                    <p>
+                        HTML이 어떤 버전으로 작성되었는지 미리 선언하여, 웹 브라우저가 내용을 올바르게 표시할 수 있도록 해주는 것이 독타입입니다.<br>
+                        그리고 바로 다음에 html 태그가 오고 html 태그 안에는 head 와 body 로 크게 나뉘어져 있습니다.<br>
+                        태그는 일반적으로 시작태그와 종료(끝)태그로 이루어져 있으며 예외적인 태그들도 있습니다.<br>
+                        또한 html 태그의 속성으로 문서에서 다룰 언어를 지정해야합니다.<br>
+                        언어 설정은 필수 속성으로 이 속성이 생략되어 있으면 안됩니다.<br>
+                        head 안에는 콘텐츠를 표현하는 내용은 없지만 콘텐츠를 표현하기 위한 내용들을 포함하게 됩니다.<br>
+                        위의 meta(메타 태그)는(문서자체를 설명하는정보)는 문서의 정보(웹페이지의 요약)를<br>
+                         브라우저와 검색엔진에게 이 문서가 어떤 정보를 가지고 있는지 알려주는 것을 명시합니다.<br>
+                        
+                        즉, 문서 자체를 설명하는 정보를 담고 있는 것으로 그 문서의 핵심키워드, 누가 만들었는지, 문자셋(언어설정) 등은<br>
+                         어떤 것을 사용하고 있는지 등의 정보를 담고 있는 태그입니다.<br>
+                        
+                        위 코드의 메타 정보는 실제 문서가 다루고 있는 언어들의 셋(문자셋)을 정의하고 있습니다.<br>
+                        title 은 문서의 정보를 브라우저에 표시하는 역할을 합니다.<br>
+                        link 는 외부자원(external file)이라고 합니다. <br>
+
+                        마지막으로 문서의 본문영역 즉, 콘텐츠 영역을 의미하는 body 태그에 웹 페이지에 표현되는 콘텐츠를 작성하게 됩니다.<br>
+                                            
+                    </p>
+                    
+                </div>
+            </section>
+            <section id="content-3">
+                <article id="content-3-2"></article>
+            </section>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <section id="footer1">
+            <a href="#">이용약관</a> |
+            <a href="#">개인정보처리방침</a> |
+            <a href="#">FAQ</a> |
+            <a href="#">고객센터</a> |
+            <a href="#">사이트맵</a>
+        </section>
+        <section id="footer2">
+            <p>© 2024 전체 폼 통합. All rights reserved.</p>
+            <p>이 사이트는 학습 목적으로 제작되었습니다.</p>
+        </section>
+    </footer>
+</body>
+</html>

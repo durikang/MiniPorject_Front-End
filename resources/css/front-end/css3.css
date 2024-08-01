@@ -346,3 +346,16 @@ section#content-2 {
         left: 0;
     }
 }
+
+#cssarea{
+    font:bold;
+    font-size: 18px;
+    color: blue;
+}
+
+#cssMo{
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+}
