@@ -1,41 +1,105 @@
 table {
     width: auto;
     height: auto;
-    margin: auto;
+    margin: 50px 50px 0px 440px;
     
 }
 .email {
-    width: 127px;
-    height: 32px;
-    font-size: 15px;
-    border: 0;
-    border-color: lightgray;
-    outline: none;
-    padding-left: 10px;
-    background-color: rgb(233,233,233);
+    width: 145px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.email:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.email1{
+    width: 130px;
+    height: 38px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.email1:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .text {
+    width: 300px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.text:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.phone{
     width: 250px;
-    height: 32px;
-    font-size: 15px;
-    border: 0;
-    outline: none;
-    padding-left: 10px;
-    background-color: rgb(233,233,233);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .certify{
     width: 50px;
-    height: 32px;
+    height: 38px;
     font-size: 15px;
-    border: 0;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
     background-color: grey;
     color: white;
 }
+.phone:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
 .certify:active{
     width: 50px;
-    height: 32px;
+    height: 37px;
     font-size: 15px;
-    border: 0;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
     background-color: orange;
 }
 select {
@@ -49,22 +113,30 @@ select {
   
 }
 .btn {
-    width: 262px;
-    height: 35px;
-    font-size: 15px;
-    border: 0;
-    outline: none;
-    padding-left: 10px;
+    width: 300px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
     background-color: gray;
     color: white;
     margin: 15px 0px 0px 0px;
     
 }
 .btn:active {
-    width: 262px;
-    height: 32px;
-    font-size: 15px;
-    border: 0;
+    width: 300px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
     outline: none;
     padding-left: 10px;
     background-color: orange;
