@@ -34,7 +34,7 @@
 
             <section class="header" id="header3">
                 <div id="login">
-                    <a href="../member/login.html" onclick="login_window()">로그인</a>
+                    <a href="../member/login.html">로그인</a>
                     <a href="../member/createAccount.html" onclick="">회원가입</a>
                 </div>
             </section>
@@ -59,18 +59,27 @@
                         <li><a href="polymorphism.html">다형성</a></li>
                     </ul>
                 </li>
-                <li><a href="../oracle/oracle.html"></a></li>
+                <li><a href="../oracle/oracle.html">Oracle</a></li>
+<<<<<<< HEAD
                 <li><a href="#">Front-End</a>
                     <ul>
-                        <li><a href="#">HTML5</a></li>
-                        <li><a href="#">CSS3</a></li>
-                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="../front-end/html5.html">HTML5</a></li>
+                        <li><a href="../front-end/css3.html">CSS3</a></li>
+                        <li><a href="../front-end/javascript.html">JavaScript</a></li>
                         <li><a href="#">JQuery</a></li>
+=======
+                <li><a href="#">Server</a>
+                    <ul>
+                        <li><a href="../server/jdbc.html">JDBC</a></li>
+                        <li><a href="#">Servlet</a></li>
+                        <li><a href="#">JSP</a></li>
+                        <li><a href="#">AJAX</a></li>
+>>>>>>> parent of cc09c4f (수정사항)
                     </ul>
                 </li>
                 <li><a href="#">Server</a>
                     <ul>
-                        <li><a href="#">JDBC</a></li>
+                        <li><a href="../server/jdbc.html">JDBC</a></li>
                         <li><a href="#">Servlet</a></li>
                         <li><a href="#">JSP</a></li>
                         <li><a href="#">AJAX</a></li>
@@ -88,12 +97,12 @@
         <section id="content">
             <aside id="content-1"></aside>
             <section id="content-2">
-                <div align="center" style="font-family: 굴림;">
+                <div class="content">
                     <h1>자바란?(Java)</h1>
                     <hr>
                 </div>
-                <div style="font-family: 굴림;">
-                    <div align="center">
+                <div>
+                    <div class="content">
                         <img class="java_img" src="../../resources/img/java/java.png" alt="java_img">
                         <img class="java_exe" src="../../resources/img/java/java_exe.png" alt="java_exe">
                     </div>
@@ -101,7 +110,9 @@
                     또한 바이트 코드(중간 언어)인 추상적인 코드로 구현된다. <br>
                     따라서, 자바 프로그램을 실행하기 위해서는 자바 가상 머신(JVM)과 개발에 필요한 표준 라이브러리 세트와 컴파일러의 환경만 맞추면<br>
                     자바 프로그램은 모든 환경에서 동일하게 동작한다. 이러한 실행환경과 개발환경을 제공하는 것이 자바 플랫폼이다.</p>
-                    <h1 align="center">Java의 장점은?</h1>
+                    <div class="content">
+                        <h1>Java의 장점은?</h1>
+                    </div>
                     <hr>
                     <li>
                         객체지향프로그래밍이다.
@@ -120,14 +131,15 @@
                         </ol>
                         <ol>자바는 개발자가 직접 메모리에 접근할 수 없으며, 메모리는 자바가 직접 관리한다.</ol>
                     </li>
-
-                    <h1 align="center">반대로 Java의 단점은</h1>
+                    <div class="content">
+                        <h1>반대로 Java의 단점은</h1>
+                    </div>
                     <hr>
                     <li>속도가 느리다.</li>
-                    <ol>자바는 실행을 위해 자바 가상 머신을 거쳐야 하므로, 
+                    <ol>자바는 실행을 위해 자바 가상 머신을 거쳐야 하므로,
                         다른 언어에 비해 실행 속도가 느려서 처리 속도가 중요한 애플리케이션에는 적합하지 않다.</ol>
                     <li>예외처리가 불편하다.</li>
-                    <ol>자바는 예외 처리가 잘 되어 있지만, 개발자가 일일이 지정해 줘야 한다는 불편함도 있다. 
+                    <ol>자바는 예외 처리가 잘 되어 있지만, 개발자가 일일이 지정해 줘야 한다는 불편함도 있다.
                         그렇게 하지 않으면, 컴파일이 거부된다.</ol>
                     <li>하드웨어 정밀 조정이 불가능하다.</li>
                     <ol>하드웨어에 연결할 수 없기 때문에 직접 하드웨어를 정밀하게 조정해야 하는 프로그램 개발에는 적합하지 않다.</ol>

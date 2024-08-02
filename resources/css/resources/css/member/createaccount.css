@@ -1,0 +1,56 @@
+table {
+    width: auto;
+    height: auto;
+    margin: auto;
+    
+}
+.email {
+    width: 127px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-color: lightgray;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233,233,233);
+}
+.text {
+    width: 250px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233,233,233);
+}
+select {
+    width: 100px;
+    height: 32px;
+    font-size: 15px;
+    border: 1;
+    border-color: lightgray;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+}
+.btn {
+    width: 262px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    background-color: gray;
+    color: white;
+    
+}
+.btn:active {
+    width: 262px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    background-color: orange;
+    
+}
