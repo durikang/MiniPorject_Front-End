@@ -283,20 +283,12 @@ section#content-2 {
 }
 
 .java_img {
-    width: 900px;
+    width: 600px;
     height: 400px;
 }
 .java_exe {
-    width: 900px;
-    height: 200px;
-}
-.java_exe_1 {
     width: 400px;
-    height: 600px;
-}
-.java_exe_2 {
-    width: 900px;
-    height: 300px;
+    height: 200px;
 }
 .content{
     text-align: center;
